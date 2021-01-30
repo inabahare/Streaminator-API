@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "50+cUJGi3wWJXsr3dqMi2U9CzNpAd6ZiyAsU7vcd0RELH6GDHzdBIdWVqUy3MPOJjBMKUj99AThnO4k1zj/jog==",
+  "dgSpecHash": "yxL3ZPChk12KcoRMqaCFAQBNpuOK+WJYtISFkw4gtZ/210Mg+DMHpgu5MsaXCgcN0uO56iUzDNzUhp47p7F8PA==",
   "success": true,
   "projectFilePath": "/home/inaba/Programming/Streaminator/Streaminator-API/Streaminator-API.csproj",
   "expectedPackageFiles": [
+    "/home/inaba/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/inaba/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.1/microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
     "/home/inaba/.nuget/packages/microsoft.aspnetcore.authentication.openidconnect/5.0.1/microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",
-    "/home/inaba/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/inaba/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/inaba/.nuget/packages/microsoft.entityframeworkcore/5.0.1/microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
     "/home/inaba/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.1/microsoft.entityframeworkcore.abstractions.5.0.1.nupkg.sha512",
     "/home/inaba/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.1/microsoft.entityframeworkcore.analyzers.5.0.1.nupkg.sha512",
+    "/home/inaba/.nuget/packages/microsoft.entityframeworkcore.design/5.0.1/microsoft.entityframeworkcore.design.5.0.1.nupkg.sha512",
     "/home/inaba/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.1/microsoft.entityframeworkcore.relational.5.0.1.nupkg.sha512",
     "/home/inaba/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/inaba/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
@@ -38,8 +40,7 @@
     "/home/inaba/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "/home/inaba/.nuget/packages/system.identitymodel.tokens.jwt/6.7.1/system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
     "/home/inaba/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
-    "/home/inaba/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
-    "/home/inaba/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+    "/home/inaba/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
