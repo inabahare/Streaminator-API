@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Streaminator_API.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20210130191454_Show")]
-    partial class Show
+    [Migration("20210218210623_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,8 +28,8 @@ namespace Streaminator_API.Migrations
                         .HasColumnType("integer")
                         .UseIdentityByDefaultColumn();
 
-                    b.Property<int>("Duration")
-                        .HasColumnType("integer");
+                    b.Property<TimeSpan>("Duration")
+                        .HasColumnType("interval");
 
                     b.Property<string>("Name")
                         .HasColumnType("text");

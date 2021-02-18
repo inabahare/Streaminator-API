@@ -26,8 +26,8 @@ namespace Streaminator_API.Migrations
                         .HasColumnType("integer")
                         .UseIdentityByDefaultColumn();
 
-                    b.Property<int>("Duration")
-                        .HasColumnType("integer");
+                    b.Property<TimeSpan>("Duration")
+                        .HasColumnType("interval");
 
                     b.Property<string>("Name")
                         .HasColumnType("text");

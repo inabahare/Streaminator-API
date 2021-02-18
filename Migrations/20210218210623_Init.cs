@@ -16,7 +16,8 @@ namespace Streaminator_API.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: true),
                     Path = table.Column<string>(type: "text", nullable: true),
-                    Duration = table.Column<int>(type: "integer", nullable: false)
+                    Duration = table.Column<TimeSpan>(type: "interval", nullable: false),
+                    REL_Video = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
