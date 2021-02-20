@@ -45,7 +45,7 @@ namespace Streaminator_API.Controllers
             {
               Name = name,
               Path = file,
-              Duration = probe.Duration,
+              Duration = probe.Duration.TotalMilliseconds,
             };
           }).ToList();
 

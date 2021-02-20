@@ -35,9 +35,6 @@ namespace Streaminator_API.Migrations
                     b.Property<string>("Path")
                         .HasColumnType("text");
 
-                    b.Property<int>("REL_Video")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
                     b.ToTable("Videos");

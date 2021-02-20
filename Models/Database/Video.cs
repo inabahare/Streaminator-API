@@ -8,6 +8,5 @@ namespace Models.Database
     public string Name { get; set; }
     public string Path { get; set; }
     public TimeSpan Duration { get; set; }
-    public int REL_Video { get; set; }
   }
 }

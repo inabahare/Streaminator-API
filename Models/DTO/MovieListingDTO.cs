@@ -6,6 +6,6 @@ namespace Streaminator.DTO
   {
     public string Name { get; set; }
     public string Path { get; set; }
-    public TimeSpan Duration { get; set; }
+    public double Duration { get; set; }
   }
 }

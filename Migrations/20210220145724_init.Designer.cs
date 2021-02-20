@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Streaminator_API.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20210218210623_Init")]
-    partial class Init
+    [Migration("20210220145724_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,9 +36,6 @@ namespace Streaminator_API.Migrations
 
                     b.Property<string>("Path")
                         .HasColumnType("text");
-
-                    b.Property<int>("REL_Video")
-                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
