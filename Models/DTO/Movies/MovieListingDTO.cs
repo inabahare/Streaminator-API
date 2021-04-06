@@ -1,6 +1,6 @@
 using System;
 
-namespace Streaminator.DTO
+namespace Streaminator.DTO.Movies
 {
   public class MovieListingDto
   {
