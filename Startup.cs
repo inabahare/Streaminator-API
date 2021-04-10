@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Streaminator.Services;
 
 namespace Streaminator_API
 {
@@ -31,6 +32,7 @@ namespace Streaminator_API
 
       services.AddControllers();
       services.AddDbContext<MovieContext>();
+      services.AddScoped<IMovieService, MovieService>();
       services.AddSwaggerGen(c =>
       {
         c.SwaggerDoc("v1", new OpenApiInfo { Title = "Streaminator_API", Version = "v1" });

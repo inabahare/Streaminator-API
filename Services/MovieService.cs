@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,7 +8,11 @@ using Streaminator.DTO.Movies;
 
 namespace Streaminator.Services
 {
-  public class MovieService
+  public interface IMovieService
+  {
+    List<MovieCollectionDto> GetMovieCollections();
+  }
+  public class MovieService : IMovieService
   {
     readonly List<string> _movieFileType = new List<string>() { ".mp4", ".avi" };
 
@@ -42,8 +47,11 @@ namespace Streaminator.Services
           .Select(listing =>
           {
             var pathWithoutPath =
-              listing.Path.Replace(path, "");
-            var seriesName = Regex.Replace(pathWithoutPath, @"/*", "");
+              listing.Path.Replace($"{path}/", "");
+            var seriesName = Regex.Replace(pathWithoutPath, @"\/.*", "");
+
+            if (seriesName.ToLower().Contains("marx"))
+              Console.WriteLine("Test");
 
             return new
             {
@@ -58,8 +66,6 @@ namespace Streaminator.Services
             Movies = grouped.Select(group => group.MovieListing).ToList()
           })
           .ToList();
-
-
 
       return movieCollection;
     }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FFMpegCore;
 using Streaminator.DTO.Movies;
+using Streaminator.Services;
 
 namespace Streaminator_API.Controllers
 {
@@ -14,17 +15,20 @@ namespace Streaminator_API.Controllers
   [Route("[controller]")]
   public class MovieController : ControllerBase
   {
-    public MovieController()
+    readonly IMovieService _movieService;
+
+    public MovieController(IMovieService movieService)
     {
+      _movieService = movieService;
     }
 
 
     [HttpGet]
     public IActionResult Get()
     {
+      var movies = _movieService.GetMovieCollections();
 
-
-      return Ok(files);
+      return Ok(movies);
     }
   }
 }
