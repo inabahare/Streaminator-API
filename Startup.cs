@@ -33,6 +33,15 @@ namespace Streaminator_API
       services.AddControllers();
       services.AddDbContext<MovieContext>();
       services.AddScoped<IMovieService, MovieService>();
+
+      services.AddCors(options =>
+        options.AddPolicy("Cors", builder =>
+          builder.WithOrigins("http://localhost:8080")
+                 .AllowAnyHeader()
+                 .AllowAnyMethod()
+                 .AllowAnyOrigin()
+                 ));
+
       services.AddSwaggerGen(c =>
       {
         c.SwaggerDoc("v1", new OpenApiInfo { Title = "Streaminator_API", Version = "v1" });
@@ -52,7 +61,7 @@ namespace Streaminator_API
       // app.UseHttpsRedirection();
 
       app.UseRouting();
-
+      app.UseCors("Cors");
       app.UseAuthorization();
 
       app.UseEndpoints(endpoints =>

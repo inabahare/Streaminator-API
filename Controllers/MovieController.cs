@@ -23,8 +23,8 @@ namespace Streaminator_API.Controllers
     }
 
 
-    [HttpGet]
-    public IActionResult Get()
+    [HttpGet("get-all-collections")]
+    public IActionResult GetCollections()
     {
       var movies = _movieService.GetMovieCollections();
 

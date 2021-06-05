@@ -50,9 +50,6 @@ namespace Streaminator.Services
               listing.Path.Replace($"{path}/", "");
             var seriesName = Regex.Replace(pathWithoutPath, @"\/.*", "");
 
-            if (seriesName.ToLower().Contains("marx"))
-              Console.WriteLine("Test");
-
             return new
             {
               SeriesName = seriesName,
